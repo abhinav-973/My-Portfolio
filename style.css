@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -10,7 +10,7 @@ body {
   /* background: linear-gradient(to bottom, rgb(0, 0, 33),rgb(15, 15, 83) , rgb(100, 113, 211)); */
   background: linear-gradient(
     135deg,
-    rgb(0, 0, 20) 30%,
+    rgb(0, 0, 30) 30%,
     rgb(1, 1, 56) 40%,
     rgb(10, 10, 70) 50%,
     rgb(20, 20, 97) 60%,
@@ -22,7 +22,7 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   width: 100vw;
-  background-size: 400% 400%;
+  background-size: 600% 600%;
   overflow-x: hidden;
   animation: flow 14s ease-out infinite;
 }
