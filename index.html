@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhinav's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Abhinav's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./project.html">Project</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi! My name is <span class="purple">Abhinav</span>
+          <div>and I am a passionate <span id="element"></span></div>
+          <button id="downloadResumeBtn" class="btn">Download Resume</button>
+          <button id="visitGithubBtn" class="btn btn-outline">Visit GitHub</button>
+        </div>
+        <div class="rightSection">
+          <img src="./images/developer.png" alt="developer" />
+        </div>
+      </section>
+
+      <hr
+        style="border: 1px solid rgb(107, 117, 194); width: 90vw; margin: auto"
+      />
+
+      <section class="secondSection">
+        <div class="container1">
+          <div class="text-gray">Details about me</div>
+          <h1 class="heading1">Skills</h1>
+          <div class="skills">
+            <ul>
+              <li><strong>Programming:</strong> C, C++, Java, JavaScript</li>
+              <li><strong>Web Development:</strong> HTML, CSS, Node.js</li>
+              <li><strong>Tools & Platforms:</strong> Git, GitHub, VS Code</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="text-gray">My Academics</div>
+          <h1 class="heading1">Education</h1>
+          <div class="skills">
+            <ul>
+              <li>10th – 94.4%</li>
+              <li>12th – 90.4%</li>
+              <li>Currently in 5th Semester, B.Tech CSE</li>
+              <li>CGPA – 8.94</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="text-gray">Institutions</div>
+          <h1 class="heading1">School & College</h1>
+          <div class="skills">
+            <ul>
+              <li>
+                <span style="font-weight: bold">School:</span> Guru Gobind Singh
+                Public School, Bokaro Steel City, Jharkhand
+              </li>
+              <li>
+                <span style="font-weight: bold">College:</span> Kalinga
+                Institute of Industrial Technology, Bhubaneshwar
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr
+      style="border: 1px solid rgb(107, 117, 194); width: 90vw; margin: auto"
+    />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Abhinav Singh</h3>
+          <p>Passionate Web Developer & C++ Programmer</p>
+        </div>
+
+        <div class="footer-center">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="./project.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="https://github.com/abhinav-973" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhinav-singh-119749277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/AbhiGamingCOD?s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Abhinav Singh. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

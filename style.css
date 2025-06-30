@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: rgb(1, 1, 56);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  font-size: 1.01rem;
+  color: rgb(184, 184, 246);
+}
+
+nav .right ul li a.active {
+  color: #6b75c2;
+  border-bottom: 2px solid #6b75c2;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  align-items: center;
+  height: 68vh;
+}
+
+.leftSection {
+  width: 40%;
+  font-size: 2.7rem;
+}
+.rightSection {
+  width: 25%;
+}
+.rightSection img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.purple,
+#element {
+  color: rgb(162, 83, 235);
+}
+
+.secondSection {
+  padding-top: 30px;
+  margin: auto;
+  max-width: 85vw;
+  min-height: 60vh;
+}
+
+.text-gray {
+  color: grey;
+  font-size: smaller;
+}
+
+.skills {
+    position: relative;
+    left: 30px;
+}
+
+.secondSection {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+}
+
+.footer {
+  background-color: rgb(0, 0, 33);
+  color: #f0f0f0;
+  padding: 40px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-left h3 {
+  margin-bottom: 10px;
+  color: rgb(162, 83, 235);
+}
+
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-center ul li {
+  margin-bottom: 8px;
+}
+
+.footer-center ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-center ul li a:hover {
+  color: #b4a580;
+}
+
+.footer-right .social-icons a {
+  color: #f0f0f0;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-right .social-icons a:hover {
+  color: #6b75c2;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
+.btn {
+  background-color: #6b75c2; /* Theme Purple */
+  color: white;
+  padding: 12px 24px;
+  margin: 10px 10px 0 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #545eb0;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #6b75c2;
+  border: 2px solid #6b75c2;
+}
+
+.btn-outline:hover {
+  background-color: #6b75c2;
+  color: white;
+}
+
+/* Optional: Wrap buttons nicely */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+/* ---------- Mobile Styles ---------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav .right ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .leftSection, .rightSection {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .rightSection img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .secondSection {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .container1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .skills ul li {
+    font-size: 16px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-right .social-icons {
+    justify-content: center;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
