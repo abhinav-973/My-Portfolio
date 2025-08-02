@@ -20,7 +20,12 @@
     <header>
       <nav>
         <div class="left">Abhinav's Portfolio</div>
-        <div class="right">
+        <div class="menu-toggle" id="menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="right" id="nav-links">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
@@ -37,16 +42,16 @@
           Hi! My name is <span class="purple">Abhinav</span>
           <div>and I am a passionate <span id="element"></span></div>
           <button id="downloadResumeBtn" class="btn">Download Resume</button>
-          <button id="visitGithubBtn" class="btn btn-outline">Visit GitHub</button>
+          <button id="visitGithubBtn" class="btn btn-outline">
+            Visit GitHub
+          </button>
         </div>
         <div class="rightSection">
           <img src="./images/developer.png" alt="developer" />
         </div>
       </section>
 
-      <hr
-        style="border: 1px solid rgb(107, 117, 194); width: 90vw; margin: auto"
-      />
+      <hr style="width: 90vw; margin: auto" />
 
       <section class="secondSection">
         <div class="container1">
@@ -61,7 +66,7 @@
           </div>
         </div>
 
-        <div class="container1">
+        <div class="container1 position-acad">
           <div class="text-gray">My Academics</div>
           <h1 class="heading1">Education</h1>
           <div class="skills">
@@ -74,7 +79,7 @@
           </div>
         </div>
 
-        <div class="container1">
+        <div class="position-inist">
           <div class="text-gray">Institutions</div>
           <h1 class="heading1">School & College</h1>
           <div class="skills">
@@ -115,9 +120,17 @@
         <div class="footer-right">
           <h4>Connect</h4>
           <div class="social-icons">
-            <a href="https://github.com/abhinav-973" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/abhinav-singh-119749277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://x.com/AbhiGamingCOD?s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/abhinav-973" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/abhinav-singh-119749277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://x.com/AbhiGamingCOD?s=09" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -129,6 +142,13 @@
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      toggleBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+
       var typed = new Typed("#element", {
         strings: ["Web Developer"],
         typeSpeed: 50,
