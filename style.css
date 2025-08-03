@@ -41,6 +41,7 @@ body {
 
 .left {
   font-size: 1.5rem;
+  position: relative;
 }
 nav {
   display: flex;
@@ -221,17 +222,22 @@ nav .right ul li a.active {
 /* Hamburger Menu (initially hidden) */
 /* Always hidden by default on larger screens */
 .menu-toggle {
+  position: relative;
+  top: -10px;
   display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
   padding: 10px;
+  background-color: #545eb0;
+  border-radius: 18%;
+  
 }
 
 .menu-toggle div {
   width: 25px;
   height: 3px;
-  background-color: #fff;
+  background-color:#ffffff;
 }
 
 /* ---------- Mobile Styles ---------- */
@@ -340,14 +346,16 @@ nav .right ul li a.active {
     position: absolute;
     top: 80px;    /* adjust based on your nav height */
     right: 0;
-    background-color: #0f0857; /* match your nav bg */
-    width: 100%;
+    background-color: rgb(7, 7, 73); /* match your nav bg */
+    width: 95%;
+    margin-right: 10px;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transform: translateY(-10px);
     transition: all 0.4s ease;
     z-index: 999;
+    border-radius: 15%;
   }
 
   .right.show {
