@@ -231,13 +231,24 @@ nav .right ul li a.active {
   padding: 10px;
   background-color: #545eb0;
   border-radius: 18%;
-  
+  border: 2px solid #6565e8;
+  transition: all 0.2s ease;
+}
+
+.menu-toggle:hover {
+  background-color: #4646c1;
+}
+.menu-toggle:active {
+  background-color: #4646c1;
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(134, 133, 133, 0.231);
 }
 
 .menu-toggle div {
   width: 25px;
   height: 3px;
-  background-color:#ffffff;
+  background-color:#0e155e;
+  border-radius: 15%;
 }
 
 /* ---------- Mobile Styles ---------- */
